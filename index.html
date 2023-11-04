@@ -5,34 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME FUNKOSHOP </title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header><!-- Inicio Header -->
-        <nav>
-            <picture>
+    <header> <!-- Inicio Header -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="./index.html">
                     <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item with-submenu">
+                            <div class="submenu__link">Funkos</div>
+                        </li>
+                        <li class="submenu__item">
+                            <div class="submenu__link">Remeras</div>
+                        </li>
+                        <li class="submenu__item">
+                            <div class="submenu__link">Llaveros</div>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/cart.hmtl">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/cart.hmtl">
                         <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
                     </a>
                 </li>
             </ul>
         </nav>
-    </header><!-- Fin Header -->
-    <main>
+    </header> <!-- Fin Header -->
+    <main class="container">
         <section>
             <article> 
                 <h3>Nuevos Ingresos</h3>
@@ -118,7 +130,7 @@
             </section>
         </section>
     </main>
-    <footer><!-- Inicio Footer --> 
+    <footer> <!-- Inicio Footer --> 
         
         <section>
             <nav>
@@ -142,6 +154,8 @@
             </picture>
         </section>
         <p>All rights reserved 2023 - Funko shop &copy;</p>
-    </footer><!-- Fin Footer -->
+    </footer> <!-- Fin Footer -->
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>
