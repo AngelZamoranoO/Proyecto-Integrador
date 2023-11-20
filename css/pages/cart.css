@@ -18,6 +18,7 @@
     --dark-bg-solid:#30343F;
     --light-bg-solid:#FAFAFF;
     --light-font-solid: #FFFFFF;
+    --light-border-250: rgba(0, 0, 0, 0.25);
 
     /* Typography */
 
@@ -43,21 +44,84 @@
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
     --spacing-20: 2rem;
+    --spacing-18: 1.8rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+    --spacing-6: 0.6rem;
 }
 
 /* CARRITO */
 
-.cart {
-    
+.cart__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px var(--light-border-250);
+    padding:var(--spacing-16);
+    margin: 3.2em 0;
+    border-radius: 10px;
 }
+
+.item__cover {
+    width: 118px;
+    height: 118px;
+}
+
+.item__description {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: var(--base-font);
+    gap: var(--spacing-8);
+    text-indent: var(--spacing-18);
+}
+
+.item__name {
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.item__license {
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+}
+
+.item__price {
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    padding-top: var(--spacing-20);
+}
+
+.item__add {
+    display: flex;
+    flex-direction: column;
+    ;
+}
+    
+* h3 {
+    text-transform: uppercase;
+}
+
 .title__text {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     font-weight: 700;
     border-bottom: 5px solid var(--primary-solid);
+    width: fit-content;
     padding-bottom: var(--spacing-8);
 }
 
+/* RESUMEN */
+
+
+
+.payment__submit {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size: var(--font-medium);
+    font-weight: 200;
+    outline: none;
+    border: none;
+    text-align: center;
+}
