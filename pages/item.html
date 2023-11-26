@@ -58,10 +58,10 @@
                 <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian</p>
                 <p class="item__price">$ 1799,99.</p>
                 <div class="item__cart">
-                    <input class="item__input" type="text" name="" id="" placeholder="0">
+                    <input class="item__input" type="number" name="quantity" id="quantity" placeholder="0">
                     <div class="item__add">
-                        <button class="item__quantity btn"><iconify-icon icon="ph:plus-fill" width="18" height="16"></iconify-icon></button>
-                        <button class="item__quantity btn"><iconify-icon icon="ph:minus-fill" width="18" height="16"></iconify-icon></button>
+                        <button id="add" class="item__quantity btn"><iconify-icon icon="ph:plus-fill" width="18" height="16"></iconify-icon></button>
+                        <button id="substract" class="item__quantity btn"><iconify-icon icon="ph:minus-fill" width="18" height="16"></iconify-icon></button>
                     </div>
                     <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
                 </div>
@@ -155,6 +155,7 @@
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="/js/item.js"></script>
     <script src="/js/glide.js"></script>
 <body>
 <html>
