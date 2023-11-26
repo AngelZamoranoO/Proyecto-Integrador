@@ -31,6 +31,7 @@
     --font-jumbo: 3.8em;
     --font-xlarge: 3em;
     --font-large: 2.4em;
+    --font-xm: 2em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
@@ -49,6 +50,7 @@
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
     --spacing-6: 0.6rem;
+    --spacing-4: 0.3rem;
 }
 
 /* CARRITO */
@@ -93,10 +95,31 @@
     padding-top: var(--spacing-20);
 }
 
+.item__quantity {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-8);
+    height: 4rem;
+}
+.item__units { 
+    text-align: center;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 700;
+    border: 0.5px solid #C9C9C9;
+    width: 8.95em;
+}
+
 .item__add {
     display: flex;
-    flex-direction: column;
-    ;
+    flex-direction: column-reverse;
+    gap: var(--spacing-4);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: var(--light-bg-solid);
 }
     
 * h3 {
@@ -109,19 +132,67 @@
     font-weight: 700;
     border-bottom: 5px solid var(--primary-solid);
     width: fit-content;
+    padding-top: var(--spacing-128);
     padding-bottom: var(--spacing-8);
+}
+
+.sub {
+    padding-top: var(--spacing-68);
 }
 
 /* RESUMEN */
 
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
+.resume__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    box-shadow: 0px 0px 10px var(--light-border-250);
+    padding:var(--spacing-24);
+    border-radius: 10px;
+    margin-top: var(--spacing-24);
+    align-items: center;
+}
+
+.resume__elements-2 {
+    text-align: end;
+}
+
+.resume__title {
+    font-weight: 600;
+    font-size: var(--font-small);
+    padding-bottom: var(--spacing-20)
+}
+
+.resume__numbers {
+    font-size: var(--font-small);
+    padding-bottom: var(--spacing-20)
+}
+
+
+.resume__title-total, .resume__numbers-total{
+    font-weight: 700;
+    font-size: var(--font-xm); 
+    border-top: solid var(--primary-solid) 2px;
+    width: 100%;
+    padding-top: var(--spacing-8);
+}
 
 .payment__submit {
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
-    font-size: var(--font-medium);
-    font-weight: 200;
+    font-size: var(--font-xlarge);
+    font-weight: 700;
     outline: none;
     border: none;
     text-align: center;
+    width: 15.7em;
+    height: var(--spacing-68);
+    margin-top: var(--spacing-36);
+    margin-bottom: var(--spacing-128);
 }
