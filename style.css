@@ -10,9 +10,3 @@ a li {
   text-decoration: none;
 } */
 
-header nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: black;
-}
