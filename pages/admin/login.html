@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header> 
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/index.html">
+                    <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
+                </a>
+            </picture>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">SALIR</a>
+                </li>
+            </ul>    
+    </nav>
+    </header>
+
+    <main>
+
+        <!-- Login -->
+        <section class="login">
+            <h1 class="login__title">INGRESAR A MI CUENTA</h1>
+            <div class="field login__email">
+                <p>Email:</p>
+                <input type="email" class="input__field" id="login__email"
+                required placeholder="johndoe@email.com" >
+            </div>
+            <div class="field login__password">
+                <p>Contraseña:</p>
+                <input type="text" class="input__field" id="login__password"
+                required
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+        </div>
+
+    
+        <div class="login__buttons">
+        <button class="login__button">Ingresar</button>
+        <div class="login__rememberMe">
+            <input type="checkbox" name="rememberMe" id="rememberMe" class="rememberMe">
+            <p>Recordarme</p>
+        </div>
+        </div>
+        <a href="" class="login__forgotPw">Olvide mi contraseña</a>
+    </section>
+
+    </main>
+
+    <footer class="footer"> <!-- Inicio Footer --> 
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="/img/branding/isotype.svg" alt="isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funko shop &copy;</p>
+    </footer> <!-- Fin Footer -->
+
+</body>
+</html>
