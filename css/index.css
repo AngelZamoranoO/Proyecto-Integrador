@@ -384,39 +384,57 @@ img {
         font-size: x-small;
         
     }
+     
 
-    .login__buttons{
-        display: flex;
-        gap: var(--spacing-36);
+    .login__forgotPw{
+        color: var(--secondary-solid);
+        padding-bottom: var(--spacing-16);
     }
 
-    .login__button{
+    
+    /* REGISTER.HTML */
+    
+    .register__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-20);
+        
+    }
+
+    .register__form:first-child{
+        padding-top: var(--spacing-16);
+    }
+
+    .register__form:last-child{
+        padding-bottom: var(--spacing-16);
+    }
+
+    /* ADMIN GENERALS */
+
+    .admin__submit{
+        display: flex;
+        gap: var(--spacing-36);
+
+    }
+    .admin__buttons{
         border: none;
         background-color: var(--primary-solid);
         color: var(--light-font-solid);
         padding: var(--spacing-8) var(--spacing-16);
     }
 
-    .login__button:hover{
+    .admin__buttons:hover{
         transition: all 0.5s ease;
         font-weight: 900;
     }
 
-    .login__rememberMe{
+    .admin__checkbox{
         display: flex;
         align-items: center;
         gap: var(--spacing-8);
+    
     }
-
-    .login__rememberMe p{
-        font-size: small;
-    }
-
-    .login__forgotPw{
-        color: var(--secondary-solid);
-        padding-bottom: var(--spacing-20);
-    }
-
     /* FOOTER */
 
     .footer {
