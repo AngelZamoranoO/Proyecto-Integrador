@@ -372,19 +372,13 @@ img {
         color: var(--dark-300)
     }
 
-    .login__title{
-        padding-top: var(--spacing-16);
-        font-size: xx-large;
-        color: var(--dark-solid);
-    }
+
 
     .input__field{
         border: none;
         border-bottom: 1px solid var(--primary-900);
-        font-size: x-small;
-        
+        font-size: x-small;   
     }
-     
 
     .login__forgotPw{
         color: var(--secondary-solid);
@@ -393,8 +387,20 @@ img {
 
     
     /* REGISTER.HTML */
-    
-    .register__form{
+
+    .register__titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .termsAndConditions{
+        color: blue;
+    }
+    /* ADMIN GENERALS */
+
+        
+    .admin__form{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -402,15 +408,27 @@ img {
         
     }
 
-    .register__form:first-child{
+    .admin__form:first-child{
         padding-top: var(--spacing-16);
     }
 
-    .register__form:last-child{
+    .admin__form:last-child{
         padding-bottom: var(--spacing-16);
     }
 
-    /* ADMIN GENERALS */
+    .admin__form *{
+        font-size: medium;
+    }
+
+    .admin__title{
+        padding-top: var(--spacing-16);
+        font-size: xx-large;
+        color: var(--dark-solid);
+    }
+
+    .admin__subtitle{
+        font-size: medium;
+    }
 
     .admin__submit{
         display: flex;
