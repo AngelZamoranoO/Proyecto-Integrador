@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
@@ -29,39 +29,50 @@
     </nav>
     </header>
 
-    <main>
 
-        <!-- Login -->
-        <section class="login">
+    <main>
+        
+        <section class="register">
             <form action="" method="post" class="admin__form">
-                <h1 class="admin__title">INGRESAR A MI CUENTA</h1>
-                <div class="field login__email">
-                    <label for="login-email">Email:</label>
-                    <input type="email" class="input__field" id="login__email"
-                    required placeholder="johndoe@email.com" >
+
+                <div class="register__titles">
+                    <h1 class="admin__title"> CREA TU CUENTA</h1>
+                    <h4 class="admin__subtitle"> Completa el formulario para ser parte del mundo de los funkos </h4>
                 </div>
-                
-                <div class="field login__password">
-                    <label for="login-password">Contraseña:</label>
-                    <input type="text" class="input__field" id="login__password"
-                    required
-                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+
+                <div class="field">
+                    <label for="register-name">Nombre:</label>
+                    <input id="POST-name" type="text" name="form_name" class="input__field" placeholder="Juan"/>
+                </div>
+                <div class="field">
+                    <label for="register-surename">Apellido:</label>
+                    <input id="POST-surename" type="text" name="form_surename" class="input__field" placeholder="Guarnizo" />
+                </div>
+                <div class="field">
+                    <label for="register-email">Email:</label>
+                    <input id="POST-email" type="email" name="form_email" class="input__field" placeholder="johndoe@email.com"/>
+                </div>
+                <div class="field">
+                    <label for="register-password">Contraseña:</label>
+                    <input id="POST-password" type="password" name="form_password" class="input__field" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                </div>          
+                <div class="field">
+                    <label for="register-password">Repita contraseña:</label>
+                    <input id="POST-repeatPassword" type="password" name="form_repeatPassword" class="input__field" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
                 </div>
                 
                 <div class="admin__submit">
                     <button class="admin__buttons">Ingresar</button>
-                
                     <div class="admin__checkbox">
-                        <input type="checkbox" name="rememberMe" id="rememberMe" class="login__rememberMe">
-                        <label for="rememberMe">Recordarme</label>
+                        <input type="checkbox" name="termAndConditions" id="termAndConditions" class="termAndConditions">
+                        <label for="termAndConditions">Acepto <a class="termAndConditions" href="">Términos y Condiciones</a> </label>
                     </div>
                 </div>
-                <a href="" class="login__forgotPw">Olvide mi contraseña</a>
+            
             </form>
 
-    
-       
-    </section>
+        </section>
+
 
     </main>
 

@@ -354,69 +354,100 @@ img {
         font-weight: 700;
     }
 
-    /* LOGIN */
-    .login{
+/* ADMIN GENERALS */
+    
+    .admin__form{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-20);
+        font-size: medium;
+        font-family: var(--alternative-font);
+        font-weight: 500;
     }
 
-
-    .field{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .admin__form:first-child{
+        padding-top: var(--spacing-16);
     }
 
-    .field input::placeholder{
-        color: var(--dark-300)
+    .admin__form:last-child{
+        padding-bottom: var(--spacing-16);
     }
 
-    .login__title{
+    .admin__title{
         padding-top: var(--spacing-16);
         font-size: xx-large;
         color: var(--dark-solid);
     }
 
-    .input__field{
-        border: none;
-        border-bottom: 1px solid var(--primary-900);
-        font-size: x-small;
-        
+    .admin__subtitle{
+        font-size: medium;
     }
 
-    .login__buttons{
+    .admin__submit{
         display: flex;
         gap: var(--spacing-36);
-    }
 
-    .login__button{
+    }
+    .admin__buttons{
         border: none;
         background-color: var(--primary-solid);
         color: var(--light-font-solid);
         padding: var(--spacing-8) var(--spacing-16);
     }
 
-    .login__button:hover{
+    .admin__buttons:hover{
         transition: all 0.5s ease;
         font-weight: 900;
     }
 
-    .login__rememberMe{
+    .admin__checkbox{
         display: flex;
         align-items: center;
         gap: var(--spacing-8);
+    
+    }
+    /* LOGIN */
+
+    .field{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--spacing-8);
     }
 
-    .login__rememberMe p{
-        font-size: small;
+    .field input::placeholder{
+        color: var(--dark-300)
+    }
+
+    .input__field{
+        border: none;
+        border-bottom: 1px solid var(--primary-900);
+        font-size: x-small;   
     }
 
     .login__forgotPw{
         color: var(--secondary-solid);
-        padding-bottom: var(--spacing-20);
+        padding-bottom: var(--spacing-16);
+        font-weight: 500;
     }
 
+    .login__rememberMe{
+        font-weight: 500;
+    }
+    
+    /* REGISTER.HTML */
+
+    .register__titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-20);
+    }
+
+    .termAndConditions{
+        color: var(--secondary-solid);
+    }
+    
     /* FOOTER */
 
     .footer {
