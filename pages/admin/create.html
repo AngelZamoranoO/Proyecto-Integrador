@@ -11,7 +11,8 @@
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
+                    <img src="/img/branding/logo_light_horizontal.svg" class="image_full" alt="Isologotipo Funkoshop">
+                    <img src="/img/branding/isotype.svg" class="image_mobile" alt="Isologotipo Funkoshop Mini">
                 </a>
             </picture>
 
@@ -67,11 +68,11 @@
                     placeholder="SSK1111AB001" >
 
                     <label for="">Precio: </label>
-                    <input type="number" class="input__field" id="create__productPrice"
+                    <input type="number" class="medium__input__field" id="create__productPrice" step="any"
                     placeholder="$0.000,00" >
 
                     <label for="">Stock</label>
-                    <input type="number" class="input__field" id="create__productStock"
+                    <input type="number" class="small__input__field" id="create__productStock" min="1" max="1000"
                     placeholder="0">
 
                 </div>
@@ -80,17 +81,17 @@
                     
                     <label for="">Descuento:</label>
                     <input type="number"
-                    class="input__field"
+                    class="small__input__field"
                     id="create__discount"
                     placeholder="0%">
 
                     <label for="interest-free fees">Cuotas</label>
                     <select class="select__field" id="product_interest-free fees">
-                        <option value="0" class="field__select">3 cuotas sin interés:</option>
-                        <option value="1">Sin cuotas:</option>
-                        <option value="2">3 cuotas sin interés:</option>
-                        <option value="3">6 cuotas sin interés:</option>
-                        <option value="4">12 cuotas sin interés:</option>
+                        <option value="0" class="field__select">3 cuotas sin interés</option>
+                        <option value="1">Sin cuotas</option>
+                        <option value="2">3 cuotas sin interés</option>
+                        <option value="3">6 cuotas sin interés</option>
+                        <option value="4">12 cuotas sin interés</option>
 
                       </select>
 

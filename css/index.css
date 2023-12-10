@@ -97,6 +97,7 @@ img {
     margin: 0 auto;
 }
 
+    
     /* HEADER */
     header {
         background-color: var(--dark-bg-solid);
@@ -113,7 +114,20 @@ img {
     .navbar__logo {
         max-width: 300px;
     }
+    .image_mobile{
+        display: none;
+    }
 
+    @media (max-width: 720px){
+        .image_full{
+            display: none;
+        }
+
+        .image_mobile{
+            display: block;
+            width: 50px;
+        }
+    }
     .navbar__menu {
         display: flex;
         align-items: center;
@@ -355,7 +369,7 @@ img {
     }
 
 /* ADMIN GENERALS */
-    
+   
     .admin__form{
         padding: var(--spacing-36);
         display: flex;
@@ -410,20 +424,41 @@ img {
     }
     /* LOGIN */
 
+
     .field{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: var(--spacing-24);
     }
 
+    @media (max-width:720px){
+        field{
+            display: flex;
+        }
+    }
+
     .field input::placeholder{
         color: var(--dark-300)
     }
 
-    .input__field{
+
+    .input__field, .medium__input__field, .small__input__field{
         border: none;
         border-bottom: 1px solid var(--primary-900);
-        font-size: x-small;   
+        width: max-content;
+        font-size: small; 
+        outline: none;
+    }
+
+    .medium__input__field{
+        width: var(--spacing-128);
+    }
+
+    .small__input__field{
+        width: var(--spacing-68);
+    }
+    .small__input__field,.medium__input__field, .input__field::placeholder{
+        text-align: center;
     }
 
     .login__forgotPw{
@@ -460,8 +495,13 @@ img {
         gap: var(--spacing-16);
     }
 
+    @media (max-width: 720px){
+        .create__desc{
+            box-sizing: border-box;
+        }
+    }
     .create__desc{
-        width: 200%;
+        padding: var(--spacing-8);
     }
     /* FOOTER */
 
