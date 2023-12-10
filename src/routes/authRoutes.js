@@ -1,11 +1,12 @@
 const express = require("express");
+const mainControllers = require("../controllers/authController");
 const router = express.Router();
 
-router.get("/login", (req, res) => res.send("Login view"));
-router.post("/login", (req, res) => res.send("Envio datos"));
-router.get("/register", (req, res) => res.send("Register View"));
-router.post("/register", (req, res) => res.send("Register"));
-router.get("/logout", (req, res) => res.send("Cerrar SS"));
+router.get("/login", mainControllers.login);
+router.post("/login", mainControllers.doLogin);
+router.get("/register", mainControllers.register);
+router.post("/register", mainControllers.doRegister);
+router.get("/logout", mainControllers.logout);
 
 
 module.exports = router;

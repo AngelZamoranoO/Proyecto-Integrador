@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const methodOverride = require("method-override");
 
 // ROUTES IMPORTS
@@ -9,11 +10,14 @@ const shopRoutes = require("./src/routes/shopRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 const authRoutes = require("./src/routes/authRoutes");
 
-app.use(express.static("public_html"));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "./src/views"))
 
 app.use(express.urlencoded()); //POST transforme el body en un JS que el prog pueda entender
 app.use(express.json()); //que los formularios entren por PUT
 app.use(methodOverride("_method")); //config luego
+
+app.use(express.static("public_html"));
 
 app.use("/", mainRoutes);
 app.use("/shop", shopRoutes);
