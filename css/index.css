@@ -412,7 +412,7 @@ img {
     .field{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: var(--spacing-8);
+        grid-gap: var(--spacing-24);
     }
 
     .field input::placeholder{
