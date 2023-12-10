@@ -357,6 +357,7 @@ img {
 /* ADMIN GENERALS */
     
     .admin__form{
+        padding: var(--spacing-36);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -447,7 +448,21 @@ img {
     .termAndConditions{
         color: var(--secondary-solid);
     }
-    
+
+    /* CREATE.HTML */
+
+    .create__form{
+        align-items: flex-start;
+    }
+
+    .create__basis{
+        display: flex;
+        gap: var(--spacing-16);
+    }
+
+    .create__desc{
+        width: 200%;
+    }
     /* FOOTER */
 
     .footer {

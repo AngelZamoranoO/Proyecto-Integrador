@@ -32,30 +32,82 @@
     <main>
 
         <section class="create">
-            <form action="" method="post" class="admin__form">
+            <form action="" method="post" class="admin__form create__form">
                 <h1 class="admin__title">CREAR NUEVO ITEM</h1>
+
+                <div class="create__basis">
+                    <label for="product__category">Categoría: </label>
+                    <select class="field__select">
+                        <option value="0">Seleccionar:</option>
+                        <option value="1">Audi</option>
+                      </select>
+                    
+                      <label for="create__category">Licencia:</label>
+                    <select>
+                        <option value="0" class="field__select">Seleccionar:</option>
+                        <option class="field__select" value="1">Audi</option>
+                      </select>
+
+                </div>
                 <div class="field create__productName">
                     <label for="create-productName">Nombre del producto:</label>
-                    <input type="text" class="input__field" id="create__productName"
-                    required placeholder="Kakashi Hatake Shippuden Saga (goat)" >
+
+                    <input
+                    type="text" class="input__field" id="create__productName"
+                    required placeholder="Kakashi Hatake Shippuden Saga (goat)">
+                </div>
+
+                <div class="create__description">
+                    <textarea name="create_desc" id="create_desc" class="create__desc" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
                 </div>
                 
-                <div class="field login__password">
-                    <label for="login-password">Contraseña:</label>
-                    <input type="text" class="input__field" id="login__password"
-                    required
-                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                <div class="create__productInfo">
+                    <label for="">SKU:</label>
+                    <input type="text" class="input__field" id="create__productSKU"
+                    placeholder="SSK1111AB001" >
+
+                    <label for="">Precio: </label>
+                    <input type="number" class="input__field" id="create__productPrice"
+                    placeholder="$0.000,00" >
+
+                    <label for="">Stock</label>
+                    <input type="number" class="input__field" id="create__productStock"
+                    placeholder="0">
+
                 </div>
+
+                <div class="create__payment">
+                    
+                    <label for="">Descuento:</label>
+                    <input type="number"
+                    class="input__field"
+                    id="create__discount"
+                    placeholder="0%">
+
+                    <label for="interest-free fees">Cuotas</label>
+                    <select class="select__field" id="product_interest-free fees">
+                        <option value="0" class="field__select">3 cuotas sin interés:</option>
+                        <option value="1">Sin cuotas:</option>
+                        <option value="2">3 cuotas sin interés:</option>
+                        <option value="3">6 cuotas sin interés:</option>
+                        <option value="4">12 cuotas sin interés:</option>
+
+                      </select>
+
+
+                </div>
+
+                <div class="create__submitImg">
+                    <label for="create_uploadImage">Imágenes: </label>
+                    <input type="file" id="create_uploadImage" class="create_uploadImage">
+                </div>
+
                 
                 <div class="admin__submit">
                     <button class="admin__buttons">Ingresar</button>
-                
-                    <div class="admin__checkbox">
-                        <input type="checkbox" name="rememberMe" id="rememberMe" class="login__rememberMe">
-                        <label for="rememberMe">Recordarme</label>
-                    </div>
-                </div>
-                <a href="" class="login__forgotPw">Olvide mi contraseña</a>
+
+                    <div class="admin__submit">
+                        <button class="admin__buttons">Limpiar</button>
             </form>
     </section>
 
