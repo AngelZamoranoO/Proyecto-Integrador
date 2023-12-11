@@ -20,6 +20,10 @@ app.post('/contacto',(request,response)=>{
     response.send('formulario recibido')
 })
 
+app.get('users',(req,res)=>{
+    res.send(__dirname+"/data")
+})
+
 const PORT = 3000;
 app.listen(PORT,()=>{console.log(`http://localhost:${PORT}`)})
 
