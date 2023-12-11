@@ -44,9 +44,9 @@
                       </select>
                     
                       <label for="create__category">Licencia:</label>
-                    <select>
-                        <option value="0" class="field__select">Seleccionar:</option>
-                        <option class="field__select" value="1">Audi</option>
+                    <select class="field__select">
+                        <option value="0">Seleccionar:</option>
+                        <option value="1">Audi</option>
                       </select>
 
                 </div>
@@ -63,38 +63,47 @@
                 </div>
                 
                 <div class="create__productInfo">
-                    <label for="">SKU:</label>
-                    <input type="text" class="input__field" id="create__productSKU"
-                    placeholder="SSK1111AB001" >
 
-                    <label for="">Precio: </label>
-                    <input type="number" class="medium__input__field" id="create__productPrice" step="any"
-                    placeholder="$0.000,00" >
-
-                    <label for="">Stock</label>
-                    <input type="number" class="small__input__field" id="create__productStock" min="1" max="1000"
-                    placeholder="0">
+                    <div>
+                        <label for="">SKU:</label>
+                        <input type="text" class="input__field" id="create__productSKU"
+                        placeholder="SSK1111AB001" >
+                    </div>
+                    <div>
+                        <label for="">Precio: </label>
+                        <input type="number" class="medium__input__field" id="create__productPrice" step="any"
+                        placeholder="$0.000,00" >
+                    </div>
+                    
+                    <div>
+                        <label for="">Stock:</label>
+                        <input type="number" class="small__input__field" id="create__productStock" min="1" max="1000"
+                        placeholder="0">
+                    </div>
 
                 </div>
 
                 <div class="create__payment">
                     
-                    <label for="">Descuento:</label>
-                    <input type="number"
-                    class="small__input__field"
-                    id="create__discount"
-                    placeholder="0%">
+                    <div class="create__discount">
+                        <label for="">Descuento:</label>
+                        <input type="number"
+                        class="small__input__field"
+                        id="create__discount"
+                        placeholder="0%">
+                    </div>
 
-                    <label for="interest-free fees">Cuotas</label>
-                    <select class="select__field" id="product_interest-free fees">
-                        <option value="0" class="field__select">3 cuotas sin interés</option>
-                        <option value="1">Sin cuotas</option>
-                        <option value="2">3 cuotas sin interés</option>
-                        <option value="3">6 cuotas sin interés</option>
-                        <option value="4">12 cuotas sin interés</option>
+                    <div class="create__fees">
+                        <label for="interest-free fees">Cuotas</label>
+                        <select id="product_interest-free fees" class="field__select">
+                            <option value="0">3 cuotas sin interés</option>
+                            <option value="1">Sin cuotas</option>
+                            <option value="2">3 cuotas sin interés</option>
+                            <option value="3">6 cuotas sin interés</option>
+                            <option value="4">12 cuotas sin interés</option>
 
-                      </select>
-
+                        </select>
+                    </div>  
 
                 </div>
 
@@ -105,7 +114,7 @@
 
                 
                 <div class="admin__submit">
-                    <button class="admin__buttons">Ingresar</button>
+                    <button class="admin__buttons">Agregar Producto</button>
 
                     <div class="admin__submit">
                         <button class="admin__buttons">Limpiar</button>
