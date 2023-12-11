@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/css/index.css">  
+</head>
+<body>
+    <header> 
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/index.html">
+                    <img src="/img/branding/logo_light_horizontal.svg" class="image_full" alt="Isologotipo Funkoshop">
+                    <img src="/img/branding/isotype.svg" class="image_mobile" alt="Isologotipo Funkoshop Mini">
+                </a>
+            </picture>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">SALIR</a>
+                </li>
+            </ul>    
+    </nav>
+    </header>
+
+    <main>
+
+        <section class="update">
+            <form action="" method="update" class="admin__form create__form">
+                <h1 class="admin__title">EDITAR ITEM</h1>
+
+                <div class="create__basis">
+                    <label for="product_category">Categoría: </label>
+                    <select 
+                    id="product_category"
+                    class="field__select">
+                        <option value="0">Seleccionar:</option>
+                        <option value="1">Audi</option>
+                      </select>
+                    
+                      <label for="product_licence">Licencia:</label>
+                    <select class="field__select"
+                    id="product_licence">
+                        <option value="0">Seleccionar:</option>
+                        <option value="1">Audi</option>
+                      </select>
+
+                </div>
+                <div class="field admin__productName">
+                    <label for="product_name">Nombre del producto:</label>
+                    <input
+                    type="text" class="input__field" id="product_name"
+                    required placeholder="Kakashi Hatake Shippuden Saga (goat)">
+                </div>
+
+                <div class="admin__description">
+                    <textarea name="create_desc" id="create_desc" class="create__desc" 
+                    placeholder="Descripción del producto"></textarea>
+                </div>
+                
+                <div class="admin__productInfo">
+
+                    <div>
+                        <label for="admin_product_SKU">SKU:</label>
+                        <input type="text" class="input__field" id="admin_product_SKU"
+                        placeholder="SSK1111AB001" >
+                    </div>
+                    <div>
+                        <label for="admin_product_price">Precio: </label>
+                        <input type="number" class="medium__input__field" id="admin_product_price" step="any"
+                        placeholder="$0.000,00" >
+                    </div>
+                    
+                    <div>
+                        <label for="admin_product_stock">Stock:</label>
+                        <input type="number" class="small__input__field" id="admin_product_stock" min="1" max="1000"
+                        placeholder="0">
+                    </div>
+
+                </div>
+
+                <div class="admin__payment">
+                    
+                    <div class="admin__discount">
+                        <label for="admin_product_discoutn">Descuento:</label>
+                        <input type="number"
+                        class="small__input__field"
+                        id="admin_product_discoutn"
+                        placeholder="0%">
+                    </div>
+
+                    <div class="admin__fees">
+                        <label for="product_interest_fees">Cuotas</label>
+                        <select id="product_interest_fees" class="field__select">
+                            <option value="0">3 cuotas sin interés</option>
+                            <option value="1">Sin cuotas</option>
+                            <option value="2">3 cuotas sin interés</option>
+                            <option value="3">6 cuotas sin interés</option>
+                            <option value="4">12 cuotas sin interés</option>
+
+                        </select>
+                    </div>  
+
+                </div>
+
+                <div class="admin__submitImg">
+                    <label for="admin_product_uploadImage">Imágenes: </label>
+                    <input type="file" id="admin_product_uploadImage" class="create_uploadImage">
+                </div>
+
+                <div class="edit_images">
+                    <div class="edit__image">
+                        <img src="/img/star-wars/bobbafeth-1.webp" class="display__image" alt="Imagen de bobbafeth-1">
+                        <label for="" class="edit__image__desc">Frente</label>
+                    </div>
+
+                    <div class="edit__image">
+                        <img src="/img/star-wars/bobbafeth-box.webp" class="display__image" alt="Imagen de bobbafeth-1">
+                        <label for="" class="edit__image__desc">Dorso</label>
+                    </div>
+                </div>
+                
+                <div class="admin__submit">
+                    <button class="admin__buttons">Modificar Producto</button>
+
+            </form>
+    </section>
+
+
+    </main>
+    <footer class="footer"> <!-- Inicio Footer --> 
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="/img/branding/isotype.svg" alt="isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funko shop &copy;</p>
+    </footer> <!-- Fin Footer -->
+</body>
+</html>
