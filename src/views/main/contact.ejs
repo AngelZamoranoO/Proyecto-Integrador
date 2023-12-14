@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> CONTACT | FUNKOSHOP</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+</head>
+
+    <%- include('./partials/header') %>
+
+        <main>
+            <section class="create container">
+                <h1 class="create__title">CONTACTO</h1>
+
+                <form class="create__form" action="" method="post">
+                    <div class="create__content">
+                        <label class="create__label" for="nombre">
+                            Nombre:
+                            <input class="create__input create__name" type="text" name="nombre" id="nombre"
+                                placeholder="FunkoShop">
+                        </label>
+                    </div>
+
+                    <div class="create__content">
+                        <label class="create__label" for="nombre">
+                            Mail:
+                            <input class="create__input create__name" type="email" name="nombre" id="nombre"
+                                placeholder="ejemplo@funkoshop.com">
+                        </label>
+                    </div>
+
+                    <div class="create__content">
+                        <textarea class="create__description" name="descripcion" id="descripcion" cols="50" rows="8"
+                            placeholder="Detalle de su consulta."></textarea>
+                    </div>
+
+                    <div class="create__content">
+                        <input class="create__button" type="submit" value="Enviar">
+                        <input class="create__button" type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <%- include('./partials/footer') %>
+
+</html>
