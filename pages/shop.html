@@ -12,11 +12,14 @@
     <header> <!-- Inicio Header -->
         <nav class="navbar container">
             <picture class="navbar__logo">
-                <a href="../index.html">
-                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
+                <a href="./index.html">
+                    <img id="logo-not-collapsed" src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
                 </a>
             </picture>
-            <ul class="navbar__menu">
+            <div class="navbar-toggler">
+                <iconify-icon icon="ic:round-menu" width="30" height="30"></iconify-icon>
+            </div>
+            <ul class="navbar__menu with-menu">
                 <li class="navbar__item with-submenu">
                     <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                     <ul class="submenu">
@@ -42,6 +45,7 @@
                         <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
                     </a>
                 </li>
+            </ul>
             </ul>
         </nav>
     </header> <!-- Fin Header -->
@@ -302,5 +306,6 @@
     </footer> <!-- Fin Footer -->
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="/js/navbar.js"></script>
 <body>
 <html>
