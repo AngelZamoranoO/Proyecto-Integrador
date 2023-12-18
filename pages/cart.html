@@ -14,12 +14,15 @@
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/img/branding/isotype.svg" alt="Isologotipo Funkoshop">
+                    <img id="logo-not-collapsed" src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
                 </a>
             </picture>
-            <ul class="navbar__menu">
+            <div class="navbar-toggler">
+                <iconify-icon icon="ic:round-menu" width="30" height="30"></iconify-icon>
+            </div>
+            <ul class="navbar__menu with-menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="/pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down" style="color:white"></iconify-icon></a>
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                     <ul class="submenu">
                         <li class="submenu__item with-submenu">
                             <div class="submenu__link">Funkos</div>
@@ -33,16 +36,17 @@
                     </ul>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/login.html">LOGIN</a>
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__cart" href="./pages/cart.hmtl">
-                        <img src="/img/icons/cart-icon.svg" alt="icono de carrito">
+                    <a class="navbar__cart" href="../pages/cart.html">
+                        <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
                     </a>
                 </li>
+            </ul>
             </ul>
         </nav>
     </header> <!-- Fin Header -->
@@ -50,17 +54,16 @@
         <section class="cart"> <!-- Inicio Carrito -->
             <h2 class="title__text">CARRITO DE COMPRAS</h2>
             <div class="cart container">
-                
                 <ul class="cart__content">
-                    <li class="cart__item">
-                            <h3>Detalles de producto</h3>
-                            <h3>Cantidad</h3>
-                            <h3>Total</h3>
+                    <li class="cart__item" id="header">
+                            <h3 class="cart__subtitle">Detalles de producto</h3>
+                            <h3 class="cart__subtitle">Cantidad</h3>
+                            <h3 class="cart__subtitle">Total</h3>
                     </li>
                     <li class="cart__item">
+                            <img class="item__cover" src="/img/star-wars/baby-yoda-1.webp" alt="figura baby yoda">
                             <article class="item__description">
-                                <img class="item__cover" src="/img/star-wars/baby-yoda-1.webp" alt="figura baby yoda">
-                                <div>
+                                <div class="item__details">
                                     <p class="item__name">BABY YODA BLUE BALL</p>
                                     <p class="item__license" >STAR WARS</p>
                                     <p class="item__price">Precio unitario: $ 1799,99</p>
@@ -69,12 +72,31 @@
                             <article class="item__quantity">
                                 <input class="item__units" type="text" name="quantity" id="quantity" placeholder="0">
                                 <div class="item__add">
-                                    <button id="substract" class="btn"><iconify-icon icon="ph:minus-fill" width="18" height="16" style="color: #f24e1e;"></iconify-icon></iconify-icon></button>
-                                    <button id="add" class="btn"><iconify-icon icon="ph:plus-fill" width="18" height="16" style="color: #f24e1e;"></iconify-icon></button>
+                                    <button id="substract" class="btn"><iconify-icon icon="ph:minus-fill" width="20" height="20" style="color: #f24e1e;"></iconify-icon></iconify-icon></button>
+                                    <button id="add" class="btn"><iconify-icon icon="ph:plus-fill" width="20" height="20" style="color: #f24e1e;"></iconify-icon></button>
                                 </div>
                             </article>
-                            <p class="item__total">$ 3599,98</p>
-                            <button class="item__delete">X</button>
+                            <p class="item__total">$ 3599,98</p>    
+                            <button class="item__delete"><iconify-icon class="cart-item__close" icon="zondicons:close-outline" width="20" height="20"></iconify-icon></button>
+                    </li>
+                    <li class="cart__item">
+                        <img class="item__cover" src="/img/pokemon/pidgeotto-1.webp" alt="figura baby yoda">
+                        <article class="item__description">
+                            <div class="item__details">
+                                <p class="item__name">PIDGEOTTO</p>
+                                <p class="item__license" >POKEMON</p>
+                                <p class="item__price">Precio unitario: $ 1799,99</p>
+                            </div>
+                        </article>
+                        <article class="item__quantity">
+                            <input class="item__units" type="text" name="quantity" id="quantity" placeholder="0">
+                            <div class="item__add">
+                                <button id="substract" class="btn"><iconify-icon icon="ph:minus-fill" width="20" height="20" style="color: #f24e1e;"></iconify-icon></iconify-icon></button>
+                                <button id="add" class="btn"><iconify-icon icon="ph:plus-fill" width="20" height="20" style="color: #f24e1e;"></iconify-icon></button>
+                            </div>
+                        </article>
+                        <p class="item__total">$ 3599,98</p>    
+                        <button class="item__delete"><iconify-icon class="cart-item__close" icon="zondicons:close-outline" width="20" height="20"></iconify-icon></button>
                     </li>
                 </ul>
             </div>
@@ -82,17 +104,23 @@
         <section class="resume"> <!-- Inicio Resúmen -->
             <h2 class="title__text sub">RESUMEN</h2>
             <div class="resume__content">
-                <div class="resume__elements-1">
-                    <p class="resume__title">CANTIDAD DE ELEMENTOS</p>
-                    <p class="resume__title">ENVIO</p>
-                    <p class="resume__title">SUBTOTAL</p>
-                    <p class="resume__title-total">TOTAL</p>
-                </div>
-                <div class="resume__elements-2">
-                    <p class="resume__numbers">3</p>
-                    <p class="resume__numbers">$ 5.399,97</p>
-                    <p class="resume__numbers">$ 0,00</p>
-                    <p class="resume__numbers-total">$ 5.399.97</p>
+                <div class="resume__elements">
+                    <div class="resume__div">
+                        <p class="resume__title">CANTIDAD DE ELEMENTOS</p>
+                        <p class="resume__numbers">3</p>
+                    </div>
+                    <div class="resume__div">
+                        <p class="resume__title">ENVIO</p>
+                        <p class="resume__numbers">$ 0</p>
+                    </div>
+                    <div class="resume__div">
+                        <p class="resume__title">SUBTOTAL</p>
+                        <p class="resume__numbers">$ 5.399,97</p>
+                    </div>
+                    <div class="resume__div resume__total">
+                    <p class="resume__title">TOTAL</p>
+                    <p class="resume__numbers">$ 5.399.97</p>
+                    </div>
                 </div>
             </div>
             <button class="payment__submit btn btn--primary btn--medium" type="submit">IR A PAGAR</button>

@@ -104,7 +104,7 @@
     width: 10.5rem;
     height: 3.5rem;
     text-align: center;
-    font-size: medium;
+    font-size: var(--font-medium);
     padding: var(--spacing-8);
 }
 
@@ -133,6 +133,7 @@
     border: none;
     text-align: center;
     width: 18rem;
+    cursor: pointer;
 }
 
 .item__payment {
@@ -143,8 +144,47 @@
 
 .item__payment-method {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .item__link:hover {
     background-color: var(--dark-bg-solid);
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: var(--spacing-16) 0;
+    }
+
+    .item__content {
+        gap: var(--spacing-12);
+        align-items: flex-start;
+        padding: var(--spacing-20);
+    }
+
+    .item__name {
+        font-size: var(--font-large);
+    }
+    
+    .item__description {
+        font-size: var(--font-small);
+        font-weight: 300;
+        width: 80%;
+    }
+    
+    .item__price {
+        font-family: var(--base-font);
+        font-size: var(--font-medium);
+        font-weight: 400;
+    }
+    
+    .item__input {
+        width: 30%;
+        text-align: center;
+        font-size: var(--font-small);
+    }
+
 }
