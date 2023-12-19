@@ -1,6 +1,6 @@
 // inicializar con la dependencia express
 // importar el modulño de expres
-import { mainRoutes } from "./mainRoutes.js";
+const mainRoutes = require("./src/routes/mainRoutes")
 const express = require('express');
 // crear una instancia de express
 const app = express();
