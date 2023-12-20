@@ -112,7 +112,7 @@ const { getAll } = require("../models/product.model");
 //   },
 // ];
 
-module.exports = {
+const shopControllers = {
   shop: async (req, res) => {
     const dbData = await getAll();
 
@@ -121,6 +121,10 @@ module.exports = {
     res.render(path.resolve(__dirname, "../views/shop/shop.ejs"), {
       data,
     });
+  },
+  shop_view: (req,res)=>{
+    console.log(__dirname)
+    res.render(path.resolve(__dirname, "../views/shop/shop.ejs"))
   },
   item: (req, res) => {
     res.render(path.resolve(__dirname, "../views/shop/item.ejs"));
@@ -135,3 +139,5 @@ module.exports = {
     res.render(path.resolve(__dirname, ""));
   },
 };
+
+module.exports = shopControllers;
