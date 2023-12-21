@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %> | FunkoShop </title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+<header> <!-- Inicio Header -->
+    <nav class="navbar container">
+        <picture class="navbar__logo">
+            <a href="./index.html">
+                <img id="logo-not-collapsed" src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
+            </a>
+        </picture>
+        <div class="navbar-toggler">
+            <iconify-icon icon="ic:round-menu" width="30" height="30"></iconify-icon>
+        </div>
+        <ul class="navbar__menu with-menu">
+            <li class="navbar__item with-submenu">
+                <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item with-submenu">
+                        <div class="submenu__link">Funkos</div>
+                    </li>
+                    <li class="submenu__item">
+                        <div class="submenu__link">Remeras</div>
+                    </li>
+                    <li class="submenu__item">
+                        <div class="submenu__link">Llaveros</div>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../pages/admin/login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__cart" href="../pages/cart.html">
+                    <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                </a>
+            </li>
+        </ul>
+        </ul>
+    </nav>
+</header> <!-- Fin Header -->

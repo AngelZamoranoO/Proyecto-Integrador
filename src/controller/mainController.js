@@ -2,7 +2,9 @@ const path = require("path");
 
 const mainControllers = {
   home: (req, res) => {
-    res.render(path.resolve(__dirname,'../views/index.ejs'));
+    res.render(path.resolve(__dirname,'../views/index.ejs'), {
+      title: 'Home'
+    });
   },
   // contact: (req, res) => {
   //    res.render(path.resolve(__dirname, "../views/main/contact.ejs"));
