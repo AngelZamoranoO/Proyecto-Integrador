@@ -6,6 +6,7 @@
 
     return data;
  }
+ item: (req,res) =>
 
  module.exports = {
     getAll

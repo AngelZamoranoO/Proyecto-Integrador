@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title %> | FunkoShop </title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/public/css/index.css">
 </head>
 <body>
     
 <header> <!-- Inicio Header -->
     <nav class="navbar container">
         <picture class="navbar__logo">
-            <a href="./index.html">
-                <img id="logo-not-collapsed" src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
+            <a href="/src/views/index.ejs">
+                <img id="logo-not-collapsed" src="/public/img/icons/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
             </a>
         </picture>
         <div class="navbar-toggler">
@@ -21,7 +21,7 @@
         </div>
         <ul class="navbar__menu with-menu">
             <li class="navbar__item with-submenu">
-                <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                <a class="navbar__link with-icon" href="/src/views/shop/shop.ejs">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                 <ul class="submenu">
                     <li class="submenu__item with-submenu">
                         <div class="submenu__link">Funkos</div>
@@ -35,14 +35,14 @@
                 </ul>
             </li>
             <li class="navbar__item">
-                <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                <a class="navbar__link" href="/contacto.html">CONTACTO</a>
             </li>
             <li class="navbar__item">
-                <a class="navbar__link" href="../pages/admin/login.html">LOGIN</a>
+                <a class="navbar__link" href="/src/views/auth/login.ejs">LOGIN</a>
             </li>
             <li class="navbar__item">
-                <a class="navbar__cart" href="../pages/cart.html">
-                    <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                <a class="navbar__cart" href="/src/views/shop/cart.ejs">
+                    <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito">
                 </a>
             </li>
         </ul>
