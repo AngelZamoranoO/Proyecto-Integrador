@@ -1,8 +1,9 @@
 const path = require("path");
 
-module.exports = {
+const adminController =
+ {
   admin: (req, res) =>
-    res.render(path.resolve(__dirname, "../views/admin/admin.ejs")),
+    res.render(path.resolve(__dirname, '../views/admin/admin.ejs')),
   create: (req, res) =>
     res.render(path.resolve(__dirname, "../views/admin/create.ejs")),
   createItem: (req, res) => res.render(path.resolve(__dirname, "")),
@@ -13,3 +14,5 @@ module.exports = {
   deleteItem: (req, res) =>
     res.render(path.resolve(__dirname, "../views/admin")),
 };
+
+module.exports = adminController;

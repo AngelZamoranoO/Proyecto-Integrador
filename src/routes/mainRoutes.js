@@ -1,16 +1,12 @@
 const Router = require('express')
+const mainControllers = require('../controller/mainController')
 
 const router = Router()
 
 // corresponde las rutas para las paginas web index desde el backend
-router.get('/home', (req,res)=>{
-    
-    console.log(__dirname);
-    console.log(src/index.html);
-    res.send(__dirname+'src/index.html')
-})
-router.get('/cart', (req,res)=>res.sendFile('ruta del carro de compra'))
-router.get('/item', (req,res)=>res.sendFile('ruta del item'))
-router.get('/shop', (req,res)=>res.sendFile('ruta del shop'))
+router.get('/', mainControllers.home);
+router.get('/home', mainControllers.home);
+router.get('/contact', mainControllers.about)
+router.get('/faq', mainControllers.faqs)
 
-module.exports = router
+module.exports = router;
