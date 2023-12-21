@@ -116,7 +116,7 @@ const shopControllers = {
   shop: async (req,res)=>{
 
     const dbData = await getAll()
-    
+    console.log(dbData);
     res.render(path.resolve(__dirname, "../views/shop/shop.ejs"),{
       title:'Tienda',
       dbData
