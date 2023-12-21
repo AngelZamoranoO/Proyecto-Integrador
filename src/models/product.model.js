@@ -6,6 +6,7 @@
 
     return data;
  }
+ 
 
  module.exports = {
     getAll

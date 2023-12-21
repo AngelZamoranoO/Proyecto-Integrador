@@ -4,7 +4,7 @@ const shopControllers = require('../controller/shopController')
 const router = Router()
 
 // corresponde las rutas para las paginas web index desde el backend
-router.get('/', shopControllers.shop_view);
+router.get('/', shopControllers.shop);
 router.get('/item/:id', shopControllers.item); // muestra para cualquier id el babyyoda
 router.post('item/:id/add', (req,res)=> res.sendFile('ruta del shop con :id item para agregar'))
 router.get('/cart', shopControllers.cart)
