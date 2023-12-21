@@ -1,11 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-</head>
+<%- include('../partials/header.ejs') %>
 <body>
-    <h1>Preparando!</h1>
+
+    <div class="admin__search">
+        <img src="../multimedia/icons/search_icon.svg" alt="search_icon" style="height: 15px; width: 15px;">
+        <input type="search" placeholder="codigo, nombre o categoria">
+    </div>
+
+    <div class="admin_product_list_title">
+        <h2 class="admin__title">LISTADO DE PRODUCTOS</h2>
+
+        <div class="admin__add__button">
+        <p>AGREGAR</p>
+        <button type="button" >
+            <a href="./create.html"><img src="../multimedia/icons/add_item.png" alt="Agregar"></a>
+        </button>      
+        </div> 
+    </div>
+       
+    <div class="admin__table">
+        <div class="table__field table__head">
+            <div>ID</div>
+            <div>Codigo</div>
+            <div>Nombre del producto</div>
+            <div>Categoria</div>
+            <div></div>
+            <div></div>
+
+        </div>
+
+        <div class="table__field">
+            <div>1</div>
+            <div>STW001001</div>
+            <div>Baby Yoda Blueball</div>
+            <div>Star Wars</div>
+            <div><button type="submit"><img src="../multimedia/icons/edit_pencil.svg" alt="Edit"></button></div>
+            <div><button type="submit"><img src="../multimedia/icons/delete_trash.svg" alt="Delete"></div>
+
+        </div>
+
+        <div class="table__field">
+            <div>2</div>
+            <div>STW001002</div>
+            <div>Baby Fett Fighter</div>
+            <div>Star Wars</div>
+            <div><button type="submit"><img src="../multimedia/icons/edit_pencil.svg" alt="Edit"></button></div>
+            <div><button type="submit"><img src="../multimedia/icons/delete_trash.svg" alt="Delete"></div>
+
+        </div>
+    </div>
+        <!-- <div class="table">
+            <table class="admin__table">
+                
+                <tbody>
+                <tr class="table__head table__items">
+                    <td>ID</td>
+                    <td>Codigo</td>
+                    <td>Nombre del producto</td>
+                    <td>Categoria</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="table__items">
+                    <td>1</td>
+                    <td>STW001001</td>
+                    <td>Baby Yoda Blueball</td>
+                    <td>STAR WARS</td>
+                    <td>
+                        <button type="submit"><img src="../multimedia/icons/edit_pencil.svg" alt="Edit"></button>
+                    </td>
+                    <td><button type="submit"><img src="../multimedia/icons/delete_trash.svg" alt="Edit"></button></td>
+                </tr>
+
+                <tr class="table__items">
+                    <td>2</td>
+                    <td>STW001002</td>
+                    <td>Baby Fett Fighter</td>
+                    <td>STAR WARS</td>
+                    <td>
+                        <button type="submit"><img src="../multimedia/icons/edit_pencil.svg" alt="Edit"></button>
+                    </td>
+                    <td><button type="submit"><img src="../multimedia/icons/delete_trash.svg" alt="Edit"></button></td>
+                </tr>
+                
+                </tbody>
+            </table> -->
+        </div>
+
+
+<%- include('../partials/footer.ejs') %>
 </body>
 </html>

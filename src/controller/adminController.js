@@ -3,7 +3,8 @@ const path = require("path");
 const adminController =
  {
   admin: (req, res) =>
-    res.render(path.resolve(__dirname, '../views/admin/admin.ejs')),
+    res.render(path.resolve(__dirname, '../views/admin/admin.ejs'),
+    { title: 'Admin'}),
   create: (req, res) =>
     res.render(path.resolve(__dirname, "../views/admin/create.ejs")),
   createItem: (req, res) => res.render(path.resolve(__dirname, "")),
