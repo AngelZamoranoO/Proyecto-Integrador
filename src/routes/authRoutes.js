@@ -1,24 +1,20 @@
 const Router = require('express')
 
 const router = Router()
+const controller = require('../controller/authController')
 
-router.get('/auth/login', (req,res) =>{
+router.get('/login', controller.login)
+
+router.post('login', (req,res) =>{
+    res.send()
+})
+router.get('/register',controller.register);
+
+router.post('/register', (req,res) =>{
     res.send()
 })
 
-router.post('/auth/login', (req,res) =>{
-    res.send()
-})
-
-router.get('/auth/register', (req,res) =>{
-    res.send()
-})
-
-router.post('/auth/register', (req,res) =>{
-    res.send()
-})
-
-router.delete('/auth/logout', (req,res) =>{
+router.delete('/logout', (req,res) =>{
     res.send()
 })
 

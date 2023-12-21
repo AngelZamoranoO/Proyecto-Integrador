@@ -1,15 +1,9 @@
 const Router = require('express')
-
 const router = Router()
+const adminController = require('../controller/adminController')
 
 // corresponde las rutas para las paginas web index desde el backend
-router.get('/admin', (req,res)=>{
-    
-    console.log(__dirname);
-    console.log(src/index.html);
-    res.send('')
-})
-
+router.get('/', adminController.admin)
 router.get('/admin/create', (req,res) =>{
     res.send()
 })

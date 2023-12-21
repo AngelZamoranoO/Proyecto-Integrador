@@ -1,5 +1,5 @@
 const path = require("path");
-const { getAll } = require("../models/product.model");
+//const { getAll } = require("../models/product.model");
 
 // const data = [
 //   {
@@ -113,15 +113,15 @@ const { getAll } = require("../models/product.model");
 // ];
 
 const shopControllers = {
-  shop: async (req, res) => {
-    const dbData = await getAll();
+  // shop: async (req, res) => {
+  //   const dbData = await getAll();
 
-    console.log(dbData);
+  //   console.log(dbData);
 
-    res.render(path.resolve(__dirname, "../views/shop/shop.ejs"), {
-      data,
-    });
-  },
+  //   res.render(path.resolve(__dirname, "../views/shop/shop.ejs"), {
+  //     data,
+  //   });
+  // },
   shop_view: (req,res)=>{
     console.log(__dirname)
     res.render(path.resolve(__dirname, "../views/shop/shop.ejs"))
