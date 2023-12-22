@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title %> | FunkoShop </title>
-    <link rel="stylesheet" href="/public/css/index.css">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/pages/cart.css">
+    <link rel="stylesheet" href="/css/pages/edit.css">
+    <link rel="stylesheet" href="/css/pages/shop.css">
+
+    
+    
 </head>
 <body>
     
 <header> <!-- Inicio Header -->
     <nav class="navbar container">
         <picture class="navbar__logo">
-            <a href="/src/views/index.ejs">
-                <img id="logo-not-collapsed" src="/public/img/icons/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
+            <a href="localhost:3000/">
+                <img id="logo-not-collapsed" src="/img/icons/branding/logo_light_horizontal.svg" alt="Isologotipo Funkoshop">
             </a>
         </picture>
         <div class="navbar-toggler">
@@ -42,7 +49,7 @@
             </li>
             <li class="navbar__item">
                 <a class="navbar__cart" href="/src/views/shop/cart.ejs">
-                    <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito">
+                    <img src="/img/icons/cart-icon.svg" alt="icono de carrito">
                 </a>
             </li>
         </ul>

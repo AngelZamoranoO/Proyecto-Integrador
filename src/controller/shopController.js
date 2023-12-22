@@ -1,5 +1,6 @@
 const path = require("path");
 const { getAll } = require("../models/product.model");
+const { title } = require("process");
 
 // const data = [
 //   {
@@ -122,11 +123,21 @@ const shopControllers = {
       dbData
     })
   },
+  shopview: (req,res) =>
+  {
+    res.render(path.resolve(__dirname, "../views/shop/shop.ejs"),{
+    title: 'Shop'}
+    )
+  },
   item: (req, res) => {
-    res.render(path.resolve(__dirname, "../views/shop/item.ejs"));
+    res.render(path.resolve(__dirname, "../views/shop/item.ejs"), {
+      title: 'Item'
+    });
   },
   cart: (req, res) => {
-    res.render(path.resolve(__dirname, "../views/shop/item.ejs")); //no tiene cart
+    res.render(path.resolve(__dirname, "../views/shop/cart.ejs"), {
+      title: 'Cart'
+    }); 
   },
   addItem: (req, res) => {
     res.render(path.resolve(__dirname, ""));
