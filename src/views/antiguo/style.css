@@ -1,0 +1,18 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+a li {
+  text-decoration: none;
+}
+/* li {
+  text-decoration: none;
+} */
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
